@@ -6,3 +6,12 @@
 // 782 -> 8
 // 918 -> 1
 
+Console.Clear();
+
+Console.Write("Введите трехзначное число: ");
+int number = int.Parse(Console.ReadLine()!);
+
+
+int secondDigitOfThisNumber = number / 10 % 10;
+
+Console.WriteLine($"{number} -> {secondDigitOfThisNumber}");
