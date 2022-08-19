@@ -2,7 +2,7 @@
 //            третью цифру заданного числа или сообщает, 
 //            что третьей цифры нет.
 
-// 645 -> 5  // Здесь скорей всего опечатка, должна быть 6.
+// 645 -> 5
 
 // 78 -> третьей цифры нет
 
@@ -14,13 +14,19 @@ Console.Write("Введите число: ");
 int number = int.Parse(Console.ReadLine()!);
 
 
-if (number > 99) 
-{
-    int secondDigitOfThisNumber = number / 100 % 10;
-    Console.WriteLine($"{number} -> {secondDigitOfThisNumber}");
-}
-
 if (number > 0 && number < 100) 
 {
     Console.WriteLine($"{number} -> третьей цифры нет");
+}
+
+else
+{
+    int num = number;
+    while (number > 999)
+    {
+        number /= 10;
+    }
+        
+    int secondDigitOfThisNumber = number % 10;
+    Console.WriteLine($"{num} -> {secondDigitOfThisNumber}");
 }
