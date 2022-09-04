@@ -51,7 +51,7 @@ void FillArray(int row, int colum)
 
 
 int[,] array = new int[5, 5];
-// Console.WriteLine($"Двумерный массив размером {m} x {n}, заполненный случайными числами.");
+
 Console.WriteLine();
 
 NewArray(array);
