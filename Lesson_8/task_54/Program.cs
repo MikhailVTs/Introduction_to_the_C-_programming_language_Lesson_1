@@ -66,7 +66,6 @@ void SortingArray(int[,] sortingArray)
     Console.WriteLine();
 }
 
-
 int[,] array = new int[4,4];
 Console.WriteLine("Двумерный массив:");
 Console.WriteLine();
