@@ -8,9 +8,13 @@ Console.Clear();
 
 int Exponentiation(int a, int b)
 {
-    if (a == b)
+    if (b == 0)
     {
-        return a;
+        return 1;
+    }
+    if (a == 0)
+    {
+        return 0;
     }
     return a * a * Exponentiation(a, b - 1);
 }
