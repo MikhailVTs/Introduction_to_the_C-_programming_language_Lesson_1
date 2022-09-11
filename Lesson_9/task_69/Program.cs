@@ -16,11 +16,7 @@ int Exponentiation(int a, int b)
     {
         return 0;
     }
-    if (a == b)
-    {
-        return a;
-    }
-    return a * a * Exponentiation(a, b - 1);
+    return a * Exponentiation(a, b - 1);
 }
 
 Console.WriteLine("Введите два числа A и B, для того, чтобы возвести число А в целую степень B.");
